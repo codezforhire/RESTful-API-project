@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
 @Component
 public class CsvModification {
 
-    private static final String PROCESSED_LOCATION = "C:\\Users\\anass\\Downloads\\restapi\\restapi\\src\\main\\resources\\uploads\\uploadedfiles\\processedfiles";
+    private static final String PROCESSED_LOCATION = path
     public byte[] processUploadedCsv(MultipartFile uploadedFile) throws IOException {
           String originalFileName = uploadedFile.getOriginalFilename();
         String processedFileName = originalFileName.replace(".csv", "-processed.csv");
